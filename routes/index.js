@@ -1,7 +1,9 @@
 const router = require("express").Router();
 
-router.get("/", (res, req) => {
-    res.setEncoding("Hello World!");
+router.get("/", (req, res) => {
+    res.send("Hello World!");
 });
+
+router.use("/user", require("./user"));
 
 module.exports = router;
