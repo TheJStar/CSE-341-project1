@@ -31,7 +31,7 @@ const createUser = async (req, res) => {
     }
     const results = await mongodb.getDatabase().db().collection("contacts").insertOne(user);
     if (results.acknowledged) {
-        res.status(204).json(results)
+        res.status(201).json(results)
     } else {
         res.status(500).json(results.error || "Something went wrong while creating a user")
     }
@@ -49,7 +49,7 @@ const updateUser = async (req, res) => {
     }
     const results = await mongodb.getDatabase().db().collection("contacts").replaceOne({ _id: userId }, user);
     if (results.modifiedCount > 0) {
-        res.status(204).send()
+        res.status(200).send()
     } else {
         res.status(500).json(results.error || "Something went wrong while updating a user")
     }
