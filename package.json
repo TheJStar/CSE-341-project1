@@ -1,0 +1,26 @@
+{
+  "name": "cse341-projects",
+  "version": "1.0.0",
+  "description": "my first project",
+  "homepage": "https://github.com/TheJStar/CSE-341-project1#readme",
+  "bugs": {
+    "url": "https://github.com/TheJStar/CSE-341-project1/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheJStar/CSE-341-project1.git"
+  },
+  "license": "ISC",
+  "author": "Joel Ayvazyan",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "~4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
